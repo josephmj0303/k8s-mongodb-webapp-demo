@@ -10,7 +10,7 @@ A production-style Kubernetes demo project that deploys a containerized web appl
 
 ---
 
-## Project Overview
+## 📌 Project Overview
 
 This project demonstrates:
 
@@ -27,13 +27,13 @@ The application is deployed inside a Vagrant VM and exposed through NGINX Ingres
 
 ---
 
-## Architecture
+## 🚀 Architecture
 
 ![Architecture Diagram](./architecture/architecture-diagram.png)
 
 ---
 
-## Tech Stack
+## ⚙️ Tech Stack
 
 | Component | Technology |
 |---|---|
@@ -47,7 +47,7 @@ The application is deployed inside a Vagrant VM and exposed through NGINX Ingres
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
 ```text
 k8s-ingress-mongo-webapp-demo/
@@ -75,7 +75,7 @@ k8s-ingress-mongo-webapp-demo/
 
 ---
 
-## Kubernetes Components
+## 📦 Kubernetes Components
 
 ### MongoDB
 
@@ -105,7 +105,7 @@ http://app.192.168.56.11.nip.io:31289
 
 ---
 
-## Deployment Steps
+## 🔄 Deployment Steps
 
 ### 1. Deploy Secret
 
@@ -147,7 +147,7 @@ kubectl apply -f kubernetes/ingress.yaml
 
 ---
 
-## Verify Resources
+## 📌 Verify Resources
 
 ```bash
 kubectl get pods
@@ -157,7 +157,7 @@ kubectl get ingress
 
 ---
 
-## Access Application
+## 🖥️ Access Application
 
 Application URL:
 
@@ -167,7 +167,7 @@ http://app.192.168.56.11.nip.io:31289
 
 ---
 
-## Example Output
+## 🧪 Example Output
 
 ```bash
 kubectl get ingress
@@ -180,7 +180,7 @@ webapp-ingress   nginx   app.192.168.56.11.nip.io              80
 
 ---
 
-## Ingress Flow
+## 🔄 Ingress Flow
 
 ```text
 User Browser
@@ -203,7 +203,7 @@ MongoDB Pods
 
 ---
 
-## Useful Commands
+## 🧠 Useful Commands
 
 ### Check Pods
 
@@ -237,7 +237,7 @@ kubectl describe pod <pod-name>
 
 ---
 
-## Future Improvements
+## 📈 Future Improvements
 
 - HTTPS with cert-manager
 - Persistent Volumes
@@ -249,7 +249,7 @@ kubectl describe pod <pod-name>
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
 ### Pods Running
 
@@ -266,7 +266,7 @@ kubectl describe pod <pod-name>
 
 ---
 
-## Documentation
+## 📂 Documentation
 
 Detailed setup guides:
 
@@ -276,13 +276,13 @@ Detailed setup guides:
 
 ---
 
-## License
+## 🏁 License
 
 This project is licensed under the MIT License.
 
 ---
 
-## Author
+## 👨‍💻 Author
 
 Joseph M J  
 DevOps Engineer
