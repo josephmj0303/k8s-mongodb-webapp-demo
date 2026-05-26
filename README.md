@@ -10,7 +10,7 @@ A production-style Kubernetes demo project that deploys a containerized web appl
 
 ---
 
-# Project Overview
+## Project Overview
 
 This project demonstrates:
 
@@ -27,13 +27,13 @@ The application is deployed inside a Vagrant VM and exposed through NGINX Ingres
 
 ---
 
-# Architecture
+## Architecture
 
 ![Architecture Diagram](./architecture/architecture-diagram.png)
 
 ---
 
-# Tech Stack
+## Tech Stack
 
 | Component | Technology |
 |---|---|
@@ -47,7 +47,7 @@ The application is deployed inside a Vagrant VM and exposed through NGINX Ingres
 
 ---
 
-# Project Structure
+## Project Structure
 
 ```text
 k8s-ingress-mongo-webapp-demo/
@@ -75,9 +75,9 @@ k8s-ingress-mongo-webapp-demo/
 
 ---
 
-# Kubernetes Components
+## Kubernetes Components
 
-## MongoDB
+### MongoDB
 
 - MongoDB Deployment
 - Internal ClusterIP Service
@@ -85,7 +85,7 @@ k8s-ingress-mongo-webapp-demo/
 
 ---
 
-## Web Application
+### Web Application
 
 - Node.js web application
 - Exposed internally using ClusterIP Service
@@ -93,7 +93,7 @@ k8s-ingress-mongo-webapp-demo/
 
 ---
 
-## NGINX Ingress
+### NGINX Ingress
 
 Ingress routes traffic to the web application using domain-based access.
 
@@ -105,9 +105,9 @@ http://app.192.168.56.11.nip.io:31289
 
 ---
 
-# Deployment Steps
+## Deployment Steps
 
-## 1. Deploy Secret
+### 1. Deploy Secret
 
 ```bash
 kubectl apply -f kubernetes/mongo-secret.yaml
@@ -115,7 +115,7 @@ kubectl apply -f kubernetes/mongo-secret.yaml
 
 ---
 
-## 2. Deploy ConfigMap
+### 2. Deploy ConfigMap
 
 ```bash
 kubectl apply -f kubernetes/mongo-config.yaml
@@ -123,7 +123,7 @@ kubectl apply -f kubernetes/mongo-config.yaml
 
 ---
 
-## 3. Deploy MongoDB
+### 3. Deploy MongoDB
 
 ```bash
 kubectl apply -f kubernetes/mongo.yaml
@@ -131,7 +131,7 @@ kubectl apply -f kubernetes/mongo.yaml
 
 ---
 
-## 4. Deploy Web Application
+### 4. Deploy Web Application
 
 ```bash
 kubectl apply -f kubernetes/webapp.yaml
@@ -139,7 +139,7 @@ kubectl apply -f kubernetes/webapp.yaml
 
 ---
 
-## 5. Deploy Ingress
+### 5. Deploy Ingress
 
 ```bash
 kubectl apply -f kubernetes/ingress.yaml
@@ -147,7 +147,7 @@ kubectl apply -f kubernetes/ingress.yaml
 
 ---
 
-# Verify Resources
+## Verify Resources
 
 ```bash
 kubectl get pods
@@ -157,7 +157,7 @@ kubectl get ingress
 
 ---
 
-# Access Application
+## Access Application
 
 Application URL:
 
@@ -167,7 +167,7 @@ http://app.192.168.56.11.nip.io:31289
 
 ---
 
-# Example Output
+## Example Output
 
 ```bash
 kubectl get ingress
@@ -180,7 +180,7 @@ webapp-ingress   nginx   app.192.168.56.11.nip.io              80
 
 ---
 
-# Ingress Flow
+## Ingress Flow
 
 ```text
 User Browser
@@ -203,33 +203,33 @@ MongoDB Pods
 
 ---
 
-# Useful Commands
+## Useful Commands
 
-## Check Pods
+### Check Pods
 
 ```bash
 kubectl get pods
 ```
 
-## Check Services
+### Check Services
 
 ```bash
 kubectl get svc
 ```
 
-## Check Ingress
+### Check Ingress
 
 ```bash
 kubectl get ingress
 ```
 
-## View Pod Logs
+### View Pod Logs
 
 ```bash
 kubectl logs <pod-name>
 ```
 
-## Describe Resource
+### Describe Resource
 
 ```bash
 kubectl describe pod <pod-name>
@@ -237,7 +237,7 @@ kubectl describe pod <pod-name>
 
 ---
 
-# Future Improvements
+## Future Improvements
 
 - HTTPS with cert-manager
 - Persistent Volumes
@@ -249,24 +249,24 @@ kubectl describe pod <pod-name>
 
 ---
 
-# Screenshots
+## Screenshots
 
-Add your screenshots inside:
+### Pods Running
 
-```text
-screenshots/
-```
+![Pods_Running](screenshots/pods-running.png)
 
-Recommended screenshots:
+### Ingress Status
 
-- kubectl get pods
-- kubectl get ingress
-- Application UI
-- Architecture diagram
+![Ingress_Status](screenshots/ingress-status.png)
+
+### Application - UI
+
+![App_UI](screenshots/app-ui.png)
+
 
 ---
 
-# Documentation
+## Documentation
 
 Detailed setup guides:
 
@@ -276,13 +276,13 @@ Detailed setup guides:
 
 ---
 
-# License
+## License
 
 This project is licensed under the MIT License.
 
 ---
 
-# Author
+## Author
 
 Joseph M J  
 DevOps Engineer
