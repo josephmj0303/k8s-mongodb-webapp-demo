@@ -29,7 +29,7 @@ The application is deployed inside a Vagrant VM and exposed through NGINX Ingres
 
 # Architecture
 
-![Architecture Diagram](./screenshots/architecture-diagram.png)
+![Architecture Diagram](./architecture/architecture-diagram.png)
 
 ---
 
