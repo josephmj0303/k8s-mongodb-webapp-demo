@@ -28,6 +28,9 @@ The application is deployed inside a Vagrant-based Kubernetes cluster.
 ```text
 k8s-ingress-mongo-webapp-demo/
 │
+├── architecture/
+│   └── architecture-diagram.png
+│
 ├── kubernetes/
 │   ├── mongo-secret.yaml
 │   ├── mongo-config.yaml
@@ -36,6 +39,12 @@ k8s-ingress-mongo-webapp-demo/
 │   └── ingress.yaml
 │
 ├── docs/
+│   ├── setup.md
+│   ├── ingress-setup.md
+│   └── architecture.md
+│
+├── screenshots/
+│
 └── README.md
 ```
 
